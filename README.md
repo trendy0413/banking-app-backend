@@ -63,6 +63,7 @@ backend/
 | `npm run db:migrate:dev` | Create/apply migrations |
 | `npm run db:migrate:deploy` | Deploy migrations (prod) |
 | `npm run seed` | Seed database |
+| `npm run database` | Run database using docker |
 
 ## API Reference
 

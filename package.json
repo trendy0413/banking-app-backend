@@ -10,7 +10,8 @@
     "db:migrate:deploy": "prisma migrate deploy",
     "db:migrate:dev": "prisma migrate dev",
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "database": "docker-compose up -d"
   },
   "keywords": [],
   "author": "",
