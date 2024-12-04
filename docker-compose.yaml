@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:14
+    container_name: postgres-container
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: database_name
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    networks:
+      - banking-app-network
+
+networks:
+  banking-app-network:
+    driver: bridge
