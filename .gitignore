@@ -6,5 +6,3 @@ Makefile
 makefile
 
 .package-lock.json
-
-dist
