@@ -15,6 +15,10 @@ app.use(express.json());
 
 app.use("/api/accounts", userRoutes);
 app.use("/api/transactions", transactionRoutes);
+app.get("/", (req, res) => {
+  res.json("Hello World")
+});
+
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, 'public')));
